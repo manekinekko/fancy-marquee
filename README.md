@@ -21,10 +21,51 @@ Use this element:
 
 ## Attributes
 
-@todo
+### `direction`
+Possible values are: 'normal', 'reverse', 'alternate', 'reverse-alternate'
+Possible modifiers are: '*-vertical', '*-horizontal'
+
+```
+@property direction
+@type string
+@default 'normal'
+```
+
+### `scrolling`
+Possible values are: 'paused', 'running'
+
+```
+@property scrolling
+@type string
+@default 'running'
+```
+
+### `duration`
+Values are in seconds.
+
+```
+@property duration
+@type number
+@default 1
+```
+
+## Methods
+
+### `toggleScrolling`
+This method toggles the scrolling values.
+
+```
+@param {string} 'running' or 'paused'
+```
+
+### `toggleDirection`
+This method toggles the direction values.
+
+```
+@param {string} One of these 'normal|reverse|alternate|alternate-reverse'. You can specify a modifier such '-vertical' or '-horizontal'
+```
 
 ## Testing Your Element
-
 
 ```sh
 python -m SimpleHTTPServer
