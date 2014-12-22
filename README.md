@@ -1,7 +1,7 @@
-drag-n-resize
+fancy-marquee
 ============
 
-The marquee element is used to insert a scrolling area of text, with custom speed and direction.
+This polymer element is used to insert a scrolling area of text, with custom speed and direction.
 
 ## Usage
 
